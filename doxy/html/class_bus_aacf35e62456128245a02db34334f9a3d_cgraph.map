@@ -1,0 +1,5 @@
+<map id="Bus::Bus" name="Bus::Bus">
+<area shape="rect" id="Node000001" title="Конструктор автобуса" alt="" coords="5,5,81,32"/>
+<area shape="rect" id="Node000002" href="$class_transport.html#a55ea7a1700bf2ea3c4c3f2425776257c" title="Конструктор базового класса" alt="" coords="129,5,268,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,16,116,18,110,19,81,21"/>
+</map>

@@ -1,0 +1,117 @@
+\doxysection{Класс Car}
+\hypertarget{class_car}{}\label{class_car}\index{Car@{Car}}
+
+
+Автомобиль — наследник \doxylink{class_transport}{Transport}.  
+
+
+
+
+{\ttfamily \+\#include $<$Transport.\+h$>$}
+
+
+
+Граф наследования:\+Car:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_car__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Car:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_car__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_car_a1c803f7c5038d3e31b368b0d0a35493c}{Car}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор машины \end{DoxyCompactList}\item 
+\Hypertarget{class_car_abb3d9fb034d1bf06ca6950ddc13f71b3}\label{class_car_abb3d9fb034d1bf06ca6950ddc13f71b3} 
+{\bfseries Car} (int amount\+Of\+Wheels=0, int amount\+Of\+Passengers=0, int speed=0, bool \+\_\+is\+Sport=false)
+\item 
+void \doxymbox{\hyperlink{class_car_a4e185905668c5f6c49b8097c16c6f27b}{print\+Info}} () const override
+\begin{DoxyCompactList}\small\item\em Вывод информации о транспорте \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \doxymbox{\hyperlink{class_transport}{Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}{Transport}} (int amount\+Of\+Wheels=0, int amount\+Of\+Passengers=0, int speed=0)
+\begin{DoxyCompactList}\small\item\em Конструктор базового класса \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Transport} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \doxymbox{\hyperlink{class_transport}{Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+amount\+Of\+Wheels} = 0
+\begin{DoxyCompactList}\small\item\em Количество колёс \end{DoxyCompactList}\item 
+int {\bfseries \+\_\+amount\+Of\+Passengers} = 0
+\begin{DoxyCompactList}\small\item\em Количество пассажиров \end{DoxyCompactList}\item 
+int {\bfseries \+\_\+speed} = 0
+\begin{DoxyCompactList}\small\item\em Скорость \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Автомобиль — наследник \doxylink{class_transport}{Transport}. 
+
+\label{doc-constructors}
+\Hypertarget{class_car_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_car_a1c803f7c5038d3e31b368b0d0a35493c}\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}}
+{\footnotesize\ttfamily \label{class_car_a1c803f7c5038d3e31b368b0d0a35493c} 
+Car::\+\+Car (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор машины 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em amount\+Of\+Wheels} & Количество колес (см. \doxysectlink{group__common__params}{amount\+Of\+Wheels}{0}) \\
+\hline
+{\em amount\+Of\+Passengers} & Количество пассажиров (см. \doxysectlink{group__common__params}{amount\+Of\+Passengers}{0}) \\
+\hline
+{\em speed} & Скорость (см. \doxysectlink{group__common__params}{speed}{0}) \\
+\hline
+{\em is\+Sport} & \doxysectlink{group__common__params}{is\+Sport}{0} \\
+\hline
+\end{DoxyParams}
+Граф вызовов:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{class_car_a1c803f7c5038d3e31b368b0d0a35493c_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_car_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_car_a4e185905668c5f6c49b8097c16c6f27b}\index{Car@{Car}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}}
+{\footnotesize\ttfamily \label{class_car_a4e185905668c5f6c49b8097c16c6f27b} 
+void Car::\+print\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Вывод информации о транспорте 
+
+Чисто виртуальная функция. Вывести информацию о транспорте в std::\+cout Должна быть переопределена в классах-\/наследниках. 
+
+Замещает \doxymbox{\hyperlink{class_transport_ac6fb6dd9914c117b8654987c78ebb6fb}{Transport}}.
+
+
+
+Объявления и описания членов классов находятся в файлах:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+Rl1ze/\+source/\+repos/\+\+C++/\+\+Tasks C++/\+\+Transport/\+\doxymbox{\hyperlink{_transport_8h}{Transport.\+h}}\item 
+C:\+/\+\+Users/\+\+Rl1ze/\+source/\+repos/\+\+C++/\+\+Tasks C++/\+\+Transport/\+\doxymbox{\hyperlink{_transport_8cpp}{Transport.\+cpp}}\end{DoxyCompactItemize}

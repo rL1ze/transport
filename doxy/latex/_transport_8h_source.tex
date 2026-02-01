@@ -1,0 +1,81 @@
+\doxysection{C:\+/\+\+Users/\+\+Rl1ze/\+source/\+repos/\+\+C++/\+\+Tasks C++/\+\+Transport/\+\+Transport.h}
+\hypertarget{_transport_8h_source}{}\label{_transport_8h_source}\doxymbox{\hyperlink{_transport_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}{Transport}}}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \doxymbox{\hyperlink{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}{Transport}}(\textcolor{keywordtype}{int}\ amountOfWheels\ =\ 0,\ \textcolor{keywordtype}{int}\ amountOfPassengers\ =\ 0,\ \textcolor{keywordtype}{int}\ speed\ =\ 0);}
+\DoxyCodeLine{00041\ \ \ \ \ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{class_transport_a9071b156741912e4550f6c88467d2834}{\string~Transport}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_transport_ac6fb6dd9914c117b8654987c78ebb6fb}{printInfo}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00057\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_transport_aef22ef6771620dd58ae57d549453e047}{\_amountOfWheels}}\ =\ 0;\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_transport_a6a3bff17d304b6531d94a340a1ce1e02}{\_amountOfPassengers}}\ =\ 0;\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_transport_ad9aff6e71d476c8496bf3df978dbbfb7}{\_speed}}\ =\ 0;\ }
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_motorcycle_a5682a8a6156b3337eabb3a70fd59f2d6}{Motorcycle}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}{Transport}}\ \{}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \doxymbox{\hyperlink{class_motorcycle_a5682a8a6156b3337eabb3a70fd59f2d6}{Motorcycle}}();}
+\DoxyCodeLine{00087\ \ \ \ \ \doxymbox{\hyperlink{class_motorcycle_a5682a8a6156b3337eabb3a70fd59f2d6}{Motorcycle}}(\textcolor{keywordtype}{int}\ amountOfWheels\ =\ 0,\ \textcolor{keywordtype}{int}\ amountOfPassengers\ =\ 0,\ \textcolor{keywordtype}{int}\ speed\ =\ 0,\ \textcolor{keywordtype}{bool}\ isSport\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00088\ \ \ \ \ \doxymbox{\hyperlink{class_motorcycle_a5682a8a6156b3337eabb3a70fd59f2d6}{\string~Motorcycle}}();}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_motorcycle_a48bdc328571e41f0694bd97ca3438f43}{printInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00090\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_isSport\ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_scooter_a6e1b34ddeaab8caaad2eb91daf9dde3d}{Scooter}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}{Transport}}\ \{}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ \doxymbox{\hyperlink{class_scooter_a6e1b34ddeaab8caaad2eb91daf9dde3d}{Scooter}}();}
+\DoxyCodeLine{00113\ \ \ \ \ \doxymbox{\hyperlink{class_scooter_a6e1b34ddeaab8caaad2eb91daf9dde3d}{Scooter}}(\textcolor{keywordtype}{int}\ amountOfWheels\ =\ 0,\ \textcolor{keywordtype}{int}\ amountOfPassengers\ =\ 0,\ \textcolor{keywordtype}{int}\ speed\ =\ 0);}
+\DoxyCodeLine{00114\ \ \ \ \ \doxymbox{\hyperlink{class_scooter_a6e1b34ddeaab8caaad2eb91daf9dde3d}{\string~Scooter}}();}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_scooter_a211250d29e6600714b3ec049a390e550}{printInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00116\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00117\ \};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_car_a1c803f7c5038d3e31b368b0d0a35493c}{Car}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}{Transport}}\ \{}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \ \ \ \ \doxymbox{\hyperlink{class_car_a1c803f7c5038d3e31b368b0d0a35493c}{Car}}();}
+\DoxyCodeLine{00139\ \ \ \ \ \doxymbox{\hyperlink{class_car_a1c803f7c5038d3e31b368b0d0a35493c}{Car}}(\textcolor{keywordtype}{int}\ amountOfWheels\ =\ 0,\ \textcolor{keywordtype}{int}\ amountOfPassengers\ =\ 0,\ \textcolor{keywordtype}{int}\ speed\ =\ 0,\ \textcolor{keywordtype}{bool}\ \_isSport\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00140\ \ \ \ \ \doxymbox{\hyperlink{class_car_a1c803f7c5038d3e31b368b0d0a35493c}{\string~Car}}();}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_car_a4e185905668c5f6c49b8097c16c6f27b}{printInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_isSport\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00145\ \};}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_bus_aacf35e62456128245a02db34334f9a3d}{Bus}}\ :\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}{Transport}}\ \{}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \doxymbox{\hyperlink{class_bus_aacf35e62456128245a02db34334f9a3d}{Bus}}();}
+\DoxyCodeLine{00166\ \ \ \ \ \doxymbox{\hyperlink{class_bus_aacf35e62456128245a02db34334f9a3d}{Bus}}(\textcolor{keywordtype}{int}\ amountOfWheels\ =\ 0,\ \textcolor{keywordtype}{int}\ amountOfPassengers\ =\ 0,\ \textcolor{keywordtype}{int}\ speed\ =\ 0);}
+\DoxyCodeLine{00167\ \ \ \ \ \doxymbox{\hyperlink{class_bus_aacf35e62456128245a02db34334f9a3d}{\string~Bus}}();}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_bus_a69518be88df40fb9d56e5186c6a7a999}{printInfo}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00169\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00170\ \};}
+
+\end{DoxyCode}

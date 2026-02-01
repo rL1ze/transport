@@ -1,0 +1,42 @@
+\doxysection{Общие параметры }
+\hypertarget{group__common__params}{}\label{group__common__params}\index{Общие параметры@{Общие параметры}}
+
+
+Общие параметры, используемые в проекте  
+
+
+\doxysubsubsection*{Файлы}
+\begin{DoxyCompactItemize}
+\item 
+файл \doxymbox{\hyperlink{doxy__common__params_8h}{doxy\+\_\+common\+\_\+params.\+h}}
+\begin{DoxyCompactList}\small\item\em Общие документируемые параметры проекта \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Общие параметры, используемые в проекте 
+
+Группа содержит описания параметров, которые используются в нескольких классах и функциях проекта.
+
+Данные параметры не являются реальными глобальными переменными, а служат для централизованного документирования смысловых характеристик аргументов функций и методов. \hypertarget{amountOfWheels}{}\doxysubsubsection{amount\+Of\+Wheels}\label{amountOfWheels}
+Должно быть неотрицательным целым числом. Для некоторых видов транспорта может быть равно 0. \hypertarget{amountOfPassengers}{}\doxysubsubsection{amount\+Of\+Passengers}\label{amountOfPassengers}
+Определяет максимальное количество пассажиров, которое может перевозить транспортное средство. \hypertarget{speed}{}\doxysubsubsection{speed}\label{speed}
+Единицы измерения:\+ километры в час (км/\+ч). Значение должно быть неотрицательным. \hypertarget{isSport}{}\doxysubsubsection{is\+Sport}\label{isSport}
+Используется в классах \doxylink{class_motorcycle}{Motorcycle} и \doxylink{class_car}{Car}.
+
+Значения:\+
+\begin{DoxyItemize}
+\item true — транспорт спортивный
+\item false — транспорт обычный
+\end{DoxyItemize}
+
+Нахождение скорости:\+
+
+\[v_{avg} = \frac{S}{T}
+\]
+
+где:\+
+\begin{DoxyItemize}
+\item $v_{avg}$ — средняя скорость транспорта
+\item $S$ — пройденное расстояние
+\item $T$ — время движения 
+\end{DoxyItemize}

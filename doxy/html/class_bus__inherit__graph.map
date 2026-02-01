@@ -1,0 +1,5 @@
+<map id="Bus" name="Bus">
+<area shape="rect" id="Node000001" title="Автобус — наследник Transport." alt="" coords="44,208,123,341"/>
+<area shape="rect" id="Node000002" href="$class_transport.html" title="Абстрактный базовый класс для всех типов транспорта." alt="" coords="5,5,162,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,173,86,209,81,208,83,178"/>
+</map>

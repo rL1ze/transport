@@ -1,0 +1,73 @@
+\doxysection{Класс Factory}
+\hypertarget{class_factory}{}\label{class_factory}\index{Factory@{Factory}}
+
+
+Реализация фабричных методов для создания транспорта.  
+
+
+
+
+{\ttfamily \+\#include $<$Factory.\+h$>$}
+
+
+
+Граф связей класса Factory:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_factory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{class_transport}{Transport}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_factory_a9e46ce18e530c87f3c687cecc56b72d5}{create\+Transport}} (int type=0, int amount\+Of\+Wheels=0, int amount\+Of\+Passengers=0, int \+\_\+speed=0, bool is\+Sport=false)
+\begin{DoxyCompactList}\small\item\em Создаёт объект транспорта по типу \end{DoxyCompactList}\item 
+\Hypertarget{class_factory_a5685aae8be0c472e0f49a5dae94e925c}\label{class_factory_a5685aae8be0c472e0f49a5dae94e925c} 
+static \doxymbox{\hyperlink{class_transport}{Transport}} \texorpdfstring{$\ast$}{*} {\bfseries create\+Transport} (int type=0, int amount\+Of\+Wheels=0, int amount\+Of\+Passengers=0, int \+\_\+speed=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Реализация фабричных методов для создания транспорта. 
+
+Содержит методы для создания трансопрта. 
+
+\label{doc-func-members}
+\Hypertarget{class_factory_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_factory_a9e46ce18e530c87f3c687cecc56b72d5}\index{Factory@{Factory}!createTransport@{createTransport}}
+\index{createTransport@{createTransport}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{createTransport()}{createTransport()}}
+{\footnotesize\ttfamily \label{class_factory_a9e46ce18e530c87f3c687cecc56b72d5} 
+\doxymbox{\hyperlink{class_transport}{Transport}} \texorpdfstring{$\ast$}{*} Factory::\+create\+Transport (\begin{DoxyParamCaption}\item[{int}]{type}{ = {\ttfamily 0}, }\item[{int}]{amount\+Of\+Wheels}{ = {\ttfamily 0}, }\item[{int}]{amount\+Of\+Passengers}{ = {\ttfamily 0}, }\item[{int}]{\+\_\+speed}{ = {\ttfamily 0}, }\item[{bool}]{is\+Sport}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Создаёт объект транспорта по типу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em type} & Тип транспорта (0 -\/ \doxylink{class_motorcycle}{Motorcycle}, 1 -\/ \doxylink{class_scooter}{Scooter}, 2 -\/ \doxylink{class_car}{Car}, 3 -\/ \doxylink{class_bus}{Bus}) \\
+\hline
+{\em amount\+Of\+Wheels} & Количество колес (см. \doxysectlink{group__common__params}{amount\+Of\+Wheels}{0}) \\
+\hline
+{\em amount\+Of\+Passengers} & Количество пассажиров (см. \doxysectlink{group__common__params}{amount\+Of\+Passengers}{0}) \\
+\hline
+{\em \+\_\+speed} & Скорость (см. \doxysectlink{group__common__params}{speed}{0}) \\
+\hline
+{\em is\+Sport} & Признак спортивного транспорта (см. \doxysectlink{group__common__params}{is\+Sport}{0}). Используется для \doxylink{class_motorcycle}{Motorcycle} и \doxylink{class_car}{Car}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Указатель на созданный объект \doxylink{class_transport}{Transport} или nullptr при неизвестном типе.
+\end{DoxyReturn}
+Перегрузка:\+ создаёт объект транспорта без параметра is\+Sport \begin{DoxyNote}{Заметки}
+Внутри вызывает основную перегрузку с is\+Sport=false 
+\end{DoxyNote}
+
+
+Объявления и описания членов классов находятся в файлах:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+Rl1ze/\+source/\+repos/\+\+C++/\+\+Tasks C++/\+\+Transport/\+\doxymbox{\hyperlink{_factory_8h}{Factory.\+h}}\item 
+C:\+/\+\+Users/\+\+Rl1ze/\+source/\+repos/\+\+C++/\+\+Tasks C++/\+\+Transport/\+Factory.\+cpp\end{DoxyCompactItemize}

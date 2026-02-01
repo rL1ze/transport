@@ -1,0 +1,10 @@
+<map id="C:/Users/Rl1ze/source/repos/C++/Tasks C++/Transport/Transport.h" name="C:/Users/Rl1ze/source/repos/C++/Tasks C++/Transport/Transport.h">
+<area shape="rect" id="Node000001" title="Объявления базового класса Transport и его наследников." alt="" coords="121,5,278,64"/>
+<area shape="rect" id="Node000002" href="$_factory_8h.html" title="Объявления класса Factory который для создания объектов различных типов транспорта." alt="" coords="5,112,162,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,77,117,113,113,110,158,72"/>
+<area shape="rect" id="Node000003" href="$_task1_8cpp.html" title="Точка входа в приложение." alt="" coords="63,219,219,277"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="195,77,189,124,177,171,157,220,153,216,172,170,183,123,192,82"/>
+<area shape="rect" id="Node000004" href="$_transport_8cpp.html" title="Реализация методов класса Transport и его наследников." alt="" coords="237,112,402,171"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="244,72,289,111,284,112,243,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,182,128,218,123,218,105,187"/>
+</map>

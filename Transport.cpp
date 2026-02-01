@@ -1,6 +1,12 @@
-#include "Transport.h";
+Ôªø#include "Transport.h";
+
 
 using namespace std;
+
+/**
+* \file Transport.cpp
+* \brief –†–µ–∞–ª–∏–∑–∞—Ü–∏—è –º–µ—Ç–æ–¥–æ–≤ –∫–ª–∞—Å—Å–∞ Transport –∏ –µ–≥–æ –Ω–∞—Å–ª–µ–¥–Ω–∏–∫–æ–≤.
+*/
 
 Transport::Transport(int amountOfWheels, int amountOfPassengers, int speed)
 	: _amountOfWheels(amountOfWheels), _amountOfPassengers(amountOfPassengers), _speed(speed) {};
@@ -15,11 +21,11 @@ Motorcycle::Motorcycle(int amountOfWheels, int amountOfPassengers, int speed, bo
 
 Motorcycle::~Motorcycle() {};
 
-void Motorcycle::printInfo(){
-	cout << "\nÕ‡ËÏÂÌÓ‚‡ÌËÂ Ú‡ÌÒÔÓÚ‡ ÏÓÚÓˆËÍÎ:" << " ÓÎ - ‚Ó ÍÓÎ∏Ò: "
-		<< _amountOfWheels << "\n ÓÎ-‚Ó Ô‡ÒÒ‡ÊËÓ‚:  " 
-		<< _amountOfPassengers << "\n—ÍÓÓÒÚ¸:  " << _speed 
-		<< "\nÃ‡¯ËÌ‡ ÒÔÓÚË‚Ì‡ˇ:  " << (_isSport ? "ƒ‡" : "ÕÂÚ")
+void Motorcycle::printInfo() const{
+	cout << "\n–ù–∞–∏–º–µ–Ω–æ–≤–∞–Ω–∏–µ —Ç—Ä–∞–Ω—Å–ø–æ—Ä—Ç–∞ –º–æ—Ç–æ—Ü–∏–∫–ª:" << "–ö–æ–ª - –≤–æ –∫–æ–ª—ë—Å: "
+		<< _amountOfWheels << "\n–ö–æ–ª-–≤–æ –ø–∞—Å—Å–∞–∂–∏—Ä–æ–≤:  " 
+		<< _amountOfPassengers << "\n–°–∫–æ—Ä–æ—Å—Ç—å:  " << _speed 
+		<< "\n–ú–∞—à–∏–Ω–∞ —Å–ø–æ—Ä—Ç–∏–≤–Ω–∞—è:  " << (_isSport ? "–î–∞" : "–ù–µ—Ç")
 		<< endl;
 }
 
@@ -32,9 +38,9 @@ Scooter::Scooter(int amountOfWheels, int amountOfPassengers, int speed)
 Scooter::~Scooter() {};
 
 void Scooter::printInfo() const {
-	cout << "\nÕ‡ËÏÂÌÓ‚‡ÌËÂ Ú‡ÌÒÔÓÚ‡ ÒÍÛÚÂ:" << "\n ÓÎ - ‚Ó ÍÓÎ∏Ò: "
-		<< _amountOfWheels <<  "\n ÓÎ-‚Ó Ô‡ÒÒ‡ÊËÓ‚:  " << _amountOfPassengers 
-		<< "\n—ÍÓÓÒÚ¸:  " << _speed << endl;
+	cout << "\n–ù–∞–∏–º–µ–Ω–æ–≤–∞–Ω–∏–µ —Ç—Ä–∞–Ω—Å–ø–æ—Ä—Ç–∞ —Å–∫—É—Ç–µ—Ä:" << "\n–ö–æ–ª - –≤–æ –∫–æ–ª—ë—Å: "
+		<< _amountOfWheels <<  "\n–ö–æ–ª-–≤–æ –ø–∞—Å—Å–∞–∂–∏—Ä–æ–≤:  " << _amountOfPassengers 
+		<< "\n–°–∫–æ—Ä–æ—Å—Ç—å:  " << _speed << endl;
 };
 
 Car::Car() : Transport(0, 0, 0), _isSport(0) {};
@@ -46,9 +52,9 @@ Car::Car(int amountOfWheels, int amountOfPassengers, int speed, bool isSport)
 Car::~Car() {};
 
 void Car::printInfo() const {
-	cout << "\nÕ‡ËÏÂÌÓ‚‡ÌËÂ Ú‡ÌÒÔÓÚ‡ ‡‚ÚÓÏÓ·ËÎ¸˚:" << "\n ÓÎ - ‚Ó ÍÓÎ∏Ò: "
-		<< _amountOfWheels << "\n ÓÎ-‚Ó Ô‡ÒÒ‡ÊËÓ‚:  " << _amountOfPassengers
-		<< "\n—ÍÓÍÓÒÚ¸:  " << _speed << "\nÃ‡¯ËÌ‡ ÒÔÓÚË‚Ì‡ˇ:  " << (_isSport ? "ƒ‡" : "ÕÂÚ")
+	cout << "\n–ù–∞–∏–º–µ–Ω–æ–≤–∞–Ω–∏–µ —Ç—Ä–∞–Ω—Å–ø–æ—Ä—Ç–∞ –∞–≤—Ç–æ–º–æ–±–∏–ª—å—ã:" << "\n–ö–æ–ª - –≤–æ –∫–æ–ª—ë—Å: "
+		<< _amountOfWheels << "\n–ö–æ–ª-–≤–æ –ø–∞—Å—Å–∞–∂–∏—Ä–æ–≤:  " << _amountOfPassengers
+		<< "\n–°–∫–æ–∫—Ä–æ—Å—Ç—å:  " << _speed << "\n–ú–∞—à–∏–Ω–∞ —Å–ø–æ—Ä—Ç–∏–≤–Ω–∞—è:  " << (_isSport ? "–î–∞" : "–ù–µ—Ç")
 		<< endl;
 }
 
@@ -61,8 +67,8 @@ Bus::Bus(int amountOfWheels, int amountOfPassengers, int speed)
 Bus::~Bus() {};
 
 void Bus::printInfo() const {
-	cout << "\nÕ‡ËÏÂÌÓ‚‡ÌËÂ Ú‡ÌÒÔÓÚ‡ ‡‚ÚÓ·ÛÒ:" << "\n ÓÎ - ‚Ó ÍÓÎ∏Ò: "
-		<< _amountOfWheels << "\n ÓÎ-‚Ó Ô‡ÒÒ‡ÊËÓ‚:  " 
-		<< _amountOfPassengers << "\n—ÍÓÓÒÚ¸:  " << _speed 
+	cout << "\n–ù–∞–∏–º–µ–Ω–æ–≤–∞–Ω–∏–µ —Ç—Ä–∞–Ω—Å–ø–æ—Ä—Ç–∞ –∞–≤—Ç–æ–±—É—Å:" << "\n–ö–æ–ª - –≤–æ –∫–æ–ª—ë—Å: "
+		<< _amountOfWheels << "\n–ö–æ–ª-–≤–æ –ø–∞—Å—Å–∞–∂–∏—Ä–æ–≤:  " 
+		<< _amountOfPassengers << "\n–°–∫–æ—Ä–æ—Å—Ç—å:  " << _speed 
 		<< endl;
 }

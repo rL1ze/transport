@@ -3,6 +3,30 @@
 #include <vector>
 #include "Factory.h"
 
+
+/**
+* \defgroup app_module Приложение
+* \brief Точка входа и пользовательский интерфейс
+*
+* Содержит функцию main и логику взаимодействия с пользователем.
+*/
+
+/**
+* \file Task1.cpp
+* \ingroup app_module
+* \brief Точка входа в приложение.
+*/
+
+/**
+* \ingroup app_module
+* \brief Точка входа программы
+* 
+* Читает типы и параметры транспорта от пользователя, создает объекты через
+* Factory::createTransport и выводит информацию о созданных объектах.
+*
+* \return Код завершения (0 — успех)
+*/
+
 using namespace std;
 
 int main()

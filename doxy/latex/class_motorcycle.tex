@@ -1,0 +1,119 @@
+\doxysection{Класс Motorcycle}
+\hypertarget{class_motorcycle}{}\label{class_motorcycle}\index{Motorcycle@{Motorcycle}}
+
+
+Класс мотоцикла  
+
+
+
+
+{\ttfamily \+\#include $<$Transport.\+h$>$}
+
+
+
+Граф наследования:\+Motorcycle:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_motorcycle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Motorcycle:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_motorcycle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_motorcycle_a5682a8a6156b3337eabb3a70fd59f2d6}{Motorcycle}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор мотоцикла \end{DoxyCompactList}\item 
+\Hypertarget{class_motorcycle_af86ca038a70f60069735d3b637ff1ada}\label{class_motorcycle_af86ca038a70f60069735d3b637ff1ada} 
+{\bfseries Motorcycle} (int amount\+Of\+Wheels=0, int amount\+Of\+Passengers=0, int speed=0, bool is\+Sport=false)
+\item 
+void \doxymbox{\hyperlink{class_motorcycle_a48bdc328571e41f0694bd97ca3438f43}{print\+Info}} () const override
+\begin{DoxyCompactList}\small\item\em Вывод информации о транспорте \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены унаследованные от \doxymbox{\hyperlink{class_transport}{Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}{Transport}} (int amount\+Of\+Wheels=0, int amount\+Of\+Passengers=0, int speed=0)
+\begin{DoxyCompactList}\small\item\em Конструктор базового класса \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Transport} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Дополнительные унаследованные члены}
+\doxysubsection*{Защищенные данные унаследованные от \doxymbox{\hyperlink{class_transport}{Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries \+\_\+amount\+Of\+Wheels} = 0
+\begin{DoxyCompactList}\small\item\em Количество колёс \end{DoxyCompactList}\item 
+int {\bfseries \+\_\+amount\+Of\+Passengers} = 0
+\begin{DoxyCompactList}\small\item\em Количество пассажиров \end{DoxyCompactList}\item 
+int {\bfseries \+\_\+speed} = 0
+\begin{DoxyCompactList}\small\item\em Скорость \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс мотоцикла 
+
+Описывает мотоцикл как вид транспорта. Может быть спортивным или обычным. 
+
+\label{doc-constructors}
+\Hypertarget{class_motorcycle_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_motorcycle_a5682a8a6156b3337eabb3a70fd59f2d6}\index{Motorcycle@{Motorcycle}!Motorcycle@{Motorcycle}}
+\index{Motorcycle@{Motorcycle}!Motorcycle@{Motorcycle}}
+\doxysubsubsection{\texorpdfstring{Motorcycle()}{Motorcycle()}}
+{\footnotesize\ttfamily \label{class_motorcycle_a5682a8a6156b3337eabb3a70fd59f2d6} 
+Motorcycle::\+\+Motorcycle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор мотоцикла 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em amount\+Of\+Wheels} & Количество колес (см. \doxysectlink{group__common__params}{amount\+Of\+Wheels}{0}) \\
+\hline
+{\em amount\+Of\+Passengers} & Количество пассажиров (см. \doxysectlink{group__common__params}{amount\+Of\+Passengers}{0}) \\
+\hline
+{\em speed} & Скорость (см. \doxysectlink{group__common__params}{speed}{0}) \\
+\hline
+{\em is\+Sport} & \doxysectlink{group__common__params}{is\+Sport}{0} \\
+\hline
+\end{DoxyParams}
+Граф вызовов:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_motorcycle_a5682a8a6156b3337eabb3a70fd59f2d6_cgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_motorcycle_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_motorcycle_a48bdc328571e41f0694bd97ca3438f43}\index{Motorcycle@{Motorcycle}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!Motorcycle@{Motorcycle}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}}
+{\footnotesize\ttfamily \label{class_motorcycle_a48bdc328571e41f0694bd97ca3438f43} 
+void Motorcycle::\+print\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Вывод информации о транспорте 
+
+Чисто виртуальная функция. Вывести информацию о транспорте в std::\+cout Должна быть переопределена в классах-\/наследниках. 
+
+Замещает \doxymbox{\hyperlink{class_transport_ac6fb6dd9914c117b8654987c78ebb6fb}{Transport}}.
+
+
+
+Объявления и описания членов классов находятся в файлах:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+Rl1ze/\+source/\+repos/\+\+C++/\+\+Tasks C++/\+\+Transport/\+\doxymbox{\hyperlink{_transport_8h}{Transport.\+h}}\item 
+C:\+/\+\+Users/\+\+Rl1ze/\+source/\+repos/\+\+C++/\+\+Tasks C++/\+\+Transport/\+\doxymbox{\hyperlink{_transport_8cpp}{Transport.\+cpp}}\end{DoxyCompactItemize}

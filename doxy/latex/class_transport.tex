@@ -1,0 +1,112 @@
+\doxysection{Класс Transport}
+\hypertarget{class_transport}{}\label{class_transport}\index{Transport@{Transport}}
+
+
+Абстрактный базовый класс для всех типов транспорта.  
+
+
+
+
+{\ttfamily \+\#include $<$Transport.\+h$>$}
+
+
+
+Граф наследования:\+Transport:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_transport__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Transport:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{class_transport__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}{Transport}} (int amount\+Of\+Wheels=0, int amount\+Of\+Passengers=0, int speed=0)
+\begin{DoxyCompactList}\small\item\em Конструктор базового класса \end{DoxyCompactList}\item 
+\Hypertarget{class_transport_a9071b156741912e4550f6c88467d2834}\label{class_transport_a9071b156741912e4550f6c88467d2834} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Transport} ()
+\begin{DoxyCompactList}\small\item\em Виртуальный деструктор \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{class_transport_ac6fb6dd9914c117b8654987c78ebb6fb}{print\+Info}} () const =0
+\begin{DoxyCompactList}\small\item\em Вывод информации о транспорте \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Защищенные данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_transport_aef22ef6771620dd58ae57d549453e047}\label{class_transport_aef22ef6771620dd58ae57d549453e047} 
+int {\bfseries \+\_\+amount\+Of\+Wheels} = 0
+\begin{DoxyCompactList}\small\item\em Количество колёс \end{DoxyCompactList}\item 
+\Hypertarget{class_transport_a6a3bff17d304b6531d94a340a1ce1e02}\label{class_transport_a6a3bff17d304b6531d94a340a1ce1e02} 
+int {\bfseries \+\_\+amount\+Of\+Passengers} = 0
+\begin{DoxyCompactList}\small\item\em Количество пассажиров \end{DoxyCompactList}\item 
+\Hypertarget{class_transport_ad9aff6e71d476c8496bf3df978dbbfb7}\label{class_transport_ad9aff6e71d476c8496bf3df978dbbfb7} 
+int {\bfseries \+\_\+speed} = 0
+\begin{DoxyCompactList}\small\item\em Скорость \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Абстрактный базовый класс для всех типов транспорта. 
+
+Содержит общие параметры транспорта:\+ количество колес, пассажиров и скорость. 
+
+\label{doc-constructors}
+\Hypertarget{class_transport_doc-constructors}
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c}\index{Transport@{Transport}!Transport@{Transport}}
+\index{Transport@{Transport}!Transport@{Transport}}
+\doxysubsubsection{\texorpdfstring{Transport()}{Transport()}}
+{\footnotesize\ttfamily \label{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c} 
+Transport::\+\+Transport (\begin{DoxyParamCaption}\item[{int}]{amount\+Of\+Wheels}{ = {\ttfamily 0}, }\item[{int}]{amount\+Of\+Passengers}{ = {\ttfamily 0}, }\item[{int}]{speed}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+Конструктор базового класса 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em amount\+Of\+Wheels} & Количество колес (см. \doxysectlink{group__common__params}{amount\+Of\+Wheels}{0}) \\
+\hline
+{\em amount\+Of\+Passengers} & Количество пассажиров (см. \doxysectlink{group__common__params}{amount\+Of\+Passengers}{0}) \\
+\hline
+{\em speed} & Скорость (см. \doxysectlink{group__common__params}{speed}{0}) \\
+\hline
+\end{DoxyParams}
+Граф вызова функции:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_transport_a55ea7a1700bf2ea3c4c3f2425776257c_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-func-members}
+\Hypertarget{class_transport_doc-func-members}
+\doxysubsection{Методы}
+\Hypertarget{class_transport_ac6fb6dd9914c117b8654987c78ebb6fb}\index{Transport@{Transport}!printInfo@{printInfo}}
+\index{printInfo@{printInfo}!Transport@{Transport}}
+\doxysubsubsection{\texorpdfstring{printInfo()}{printInfo()}}
+{\footnotesize\ttfamily \label{class_transport_ac6fb6dd9914c117b8654987c78ebb6fb} 
+virtual void Transport::\+print\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Вывод информации о транспорте 
+
+Чисто виртуальная функция. Вывести информацию о транспорте в std::\+cout Должна быть переопределена в классах-\/наследниках. 
+
+Замещается в \doxymbox{\hyperlink{class_bus_a69518be88df40fb9d56e5186c6a7a999}{Bus}}, \doxymbox{\hyperlink{class_car_a4e185905668c5f6c49b8097c16c6f27b}{Car}}, \doxymbox{\hyperlink{class_motorcycle_a48bdc328571e41f0694bd97ca3438f43}{Motorcycle}} и \doxymbox{\hyperlink{class_scooter_a211250d29e6600714b3ec049a390e550}{Scooter}}.
+
+
+
+Объявления и описания членов классов находятся в файлах:\+\begin{DoxyCompactItemize}
+\item 
+C:\+/\+\+Users/\+\+Rl1ze/\+source/\+repos/\+\+C++/\+\+Tasks C++/\+\+Transport/\+\doxymbox{\hyperlink{_transport_8h}{Transport.\+h}}\item 
+C:\+/\+\+Users/\+\+Rl1ze/\+source/\+repos/\+\+C++/\+\+Tasks C++/\+\+Transport/\+\doxymbox{\hyperlink{_transport_8cpp}{Transport.\+cpp}}\end{DoxyCompactItemize}
